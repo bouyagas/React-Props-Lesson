@@ -3,7 +3,7 @@ import ProfileInfo from './ProfileInfo';
 
 export default class ProfileCard extends Component {
   renderThings(arr) {
-    return arr.map(item => <ProfileInfo someData={item} />);
+    return arr.map(item => <ProfileInfo key={item.id} someData={item} />);
   }
   render() {
     return (
